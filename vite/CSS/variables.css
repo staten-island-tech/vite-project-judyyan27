@@ -1,15 +1,17 @@
 :root{
-    --light-purple: #b87de9;
-    --dark-purple: #6e22ad;
+    --oldlace: #fff6e2;
+    --peru: #cc975c;
+    --dimgray: #533633;
   
-    --light-blue: #817de9;
-    --dark-blue: #2722ad;
+    --peachpuff: #eed1b2;
+    --tan: #bf976c;
+    --black: #2c2827;
     
-    --primary: #812bc8;
+    --primary: #fff6e2;
   
-    --h1: 7rem;
-    --h2: 6rem;
-    --h3: 5rem;
-    --h4: 4rem;
-    --h5: 1.5rem;
+    --h1: 8.976rem;
+    --h2: 6.734rem;
+    --h3: 5.052rem;
+    --h4: 3.79rem;
+    --h5: 2.843rem;
   }

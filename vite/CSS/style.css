@@ -8,13 +8,15 @@ html, body, * {
 }
 
 :root{
-  --light-purple: #b87de9;
-  --dark-purple: #6e22ad;
+  --light-oldlace: #fff6e2;
+  --light-peru: #cc975c;
+  --light-dimgray: #533633;
 
-  --light-blue: #817de9;
-  --dark-blue: #2722ad;
+  --dark-peachpuff: #eed1b2;
+  --dark-tan: #bf976c;
+  --dark-black: #2c2827;
   
-  --primary: #812bc8;
+  --primary: #fff6e2;
 
   --h1: 7rem;
   --h2: 6rem;
@@ -23,11 +25,11 @@ html, body, * {
   --h5: 1.5rem;
 }
 
-.warm-purp {
+.bright {
   --primary: (var(--light-purple));
 }
 
-.cold-blue{
+.dark{
   --primary: (var(--light-blue));
 }
 
