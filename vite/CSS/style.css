@@ -7,23 +7,22 @@ html, body, * {
   font-size: 10px;
 }
 
-:root{
-  --light-oldlace: #fff6e2;
-  --light-peru: #cc975c;
-  --light-dimgray: #533633;
-
-  --dark-peachpuff: #eed1b2;
-  --dark-tan: #bf976c;
-  --dark-black: #2c2827;
-  
-  --primary: #fff6e2;
-
-  --h1: 7rem;
-  --h2: 6rem;
-  --h3: 5rem;
-  --h4: 4rem;
-  --h5: 1.5rem;
+h1 {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  h2 {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  p {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 
 .bright {
   --primary: (var(--light-purple));
@@ -51,4 +50,32 @@ h4 {
 }
 h5 {
   font-size: var(--h5);
+}
+
+
+
+.card {
+  width: 45rem;
+  height: 55rem;
+  border-radius: 1.5rem;
+  border-width: 2rem;
+  margin:1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border: 1.5rem groove var(--dimgray);
+  background-color: var(--oldlace);
+}
+
+.card-img {
+  width: 70%;
+  object-fit: contain;
+}
+
+.card-title, .card-desc, .card-price {
+  margin: 1rem;
+  color: var(--dimgray);
 }
