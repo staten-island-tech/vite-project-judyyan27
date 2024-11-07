@@ -5,15 +5,16 @@ const DOMSelectors = {
   form: document.querySelector(`form`),
   button: document.querySelector(`.submit`),
   container: document.querySelector(`#container-box`),
-  name: document.querySelector(`#name`),
-  flavor: document.querySelector(`#description`),
 };
 
-DOMSelectors.button.addEventListener("click", function (event) {
-  event.preventDefault();
-
-  DOMSelectors.container.insertAdjacentHTML("beforeend");
-  `    <div class="card">
+flowers.forEach(
+  (flowers) => (title = flowers.name),
+  (description = flowers.description),
+  (price = flowers.price),
+  (image = flowers.image),
+  (altText = flowers.altText.DOMSelectors.container.insertAdjacentHTML(
+    "beforeend"
+  )`    <div class="card">
       <h3 class="card-title">${title}</h1>
       <h4 class="card-desc">${description}</p>
       <h5 class="card-price">${price}</h2>
@@ -22,5 +23,5 @@ DOMSelectors.button.addEventListener("click", function (event) {
         src="${image}"
         alt="${altText}"
       />
-    </div>`;
-});
+    </div>`)
+);
