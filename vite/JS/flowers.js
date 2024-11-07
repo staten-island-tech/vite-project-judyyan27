@@ -133,3 +133,7 @@ const flowers = [
 ];
 
 export { flowers };
+
+movies.filter((movie) => movie.actors.includes("Actor name"));
+
+//
