@@ -65,8 +65,9 @@ const flowers = [
     description:
       "A lush, fragrant flower with layers of soft, pastel-colored petals.",
     price: 13.5,
-    imageUrl: "",
-    altText: "",
+    imageUrl:
+      "https://th.bing.com/th/id/R.4b4f1ce2a90911d68b15fc5faf110dea?rik=vpla8RxXMO1ldA&pid=ImgRaw&r=0",
+    altText: "close up of a peony",
   },
   {
     title: "Lavender",
@@ -130,10 +131,18 @@ const flowers = [
       "https://blog.floweradvisor.com.sg/wp-content/uploads/2021/07/Peach-Blossom.jpeg",
     altText: "close up image of cherry blossom",
   },
+
+  {
+    title: "Chrysanthemum",
+    description:
+      "A vibrant flower with a rich history, symbolizing joy and positivity, available in a variety of colors.",
+    price: 10.5,
+    imageUrl:
+      "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/pink-and-yellow-chrysanthemum-joyce-baldassarre.jpg",
+    altText: "close up image of a yellow and pink chrysanthemum",
+  },
 ];
 
 export { flowers };
 
-movies.filter((movie) => movie.actors.includes("Actor name"));
-
-//
+//movies.filter((movie) => movie.actors.includes("Actor name"));
