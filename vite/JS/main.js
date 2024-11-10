@@ -4,8 +4,8 @@ import { flowers } from "./flowers.js";
 const DOMSelectors = {
   button: document.querySelector(`.button`),
   theme: document.querySelector(`#theme`),
-  spring_summer: document.querySelector(`#spring_summer`),
-  fall_winter: document.querySelector(`#fall_winter`),
+  spring_s: document.querySelector(`#spring_summer`),
+  fall_w: document.querySelector(`#fall_winter`),
   vibrant: document.querySelector(`#vibrant`),
   pastel: document.querySelector(`#pastel`),
   sale: document.querySelector(`#sale`),
@@ -13,14 +13,15 @@ const DOMSelectors = {
   container: document.querySelector(`.container-box`),
 };
 
-function createCards() {
+// Upon loading website, all cards show on screen
+function createCards(flowers) {
   flowers.forEach((flower) =>
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
       `<div class="card">
-        <h4 class="card-title">${flower.title}</h4>
-        <h5 class="card-desc">${flower.description}</h5>
-        <h5 class="card-price">$${flower.price}</h5>
+        <h2 class="card-title">${flower.title}</h2>
+        <h3 class="card-desc">${flower.description}</h3>
+        <h4 class="card-price">$${flower.price}</h4>
         <img
           class="card-img"
           src="${flower.imageUrl}"
@@ -30,15 +31,104 @@ function createCards() {
     )
   );
 }
-createCards();
+createCards(flowers);
 
-reset.addEventlistener("click", function () {
+//Reset selection of cards on screen
+DOMSelectors.reset.addEventListener("click", function () {
   DOMSelectors.container.innerHTML = "";
-  //erases the cards inside container
+  createCards(flowers);
+});
 
-  createCards();
+// When the spring_summer button is pressed, generate flowers that bloom in those seasons
+DOMSelectors.spring_s.addEventListener("click", function () {
+  DOMSelectors.container.innerHTML = "";
 
-  //load new cards
+  const springSummer = flowers.filter((flower) => flower.spring_summer === "Y");
+
+  springSummer.forEach((flower) =>
+    DOMSelectors.container.insertAdjacentHTML(
+      "beforeend",
+      `<div class="card">
+        <h2 class="card-title">${flower.title}</h2>
+        <h3 class="card-desc">${flower.description}</h3>
+        <h4 class="card-price">$${flower.price}</h4>
+        <img
+          class="card-img"
+          src="${flower.imageUrl}"
+          alt="${flower.altText}"
+        />
+      </div>`
+    )
+  );
+});
+
+// When the fall_winter button is pressed, generate flowers that bloom in those seasons
+DOMSelectors.fall_w.addEventListener("click", function () {
+  DOMSelectors.container.innerHTML = "";
+
+  const fallWinter = flowers.filter((flower) => flower.fall_winter === "Y");
+
+  fallWinter.forEach((flower) =>
+    DOMSelectors.container.insertAdjacentHTML(
+      "beforeend",
+      `<div class="card">
+        <h2 class="card-title">${flower.title}</h2>
+        <h3 class="card-desc">${flower.description}</h3>
+        <h4 class="card-price">$${flower.price}</h4>
+        <img
+          class="card-img"
+          src="${flower.imageUrl}"
+          alt="${flower.altText}"
+        />
+      </div>`
+    )
+  );
+});
+
+// When the vibrant button is pressed, generate flowers that are vibrant
+DOMSelectors.vibrant.addEventListener("click", function () {
+  DOMSelectors.container.innerHTML = "";
+
+  const vibrant = flowers.filter((flower) => flower.warm_vibrant === "Y");
+
+  vibrant.forEach((flower) =>
+    DOMSelectors.container.insertAdjacentHTML(
+      "beforeend",
+      `<div class="card">
+        <h2 class="card-title">${flower.title}</h2>
+        <h3 class="card-desc">${flower.description}</h3>
+        <h4 class="card-price">$${flower.price}</h4>
+        <img
+          class="card-img"
+          src="${flower.imageUrl}"
+          alt="${flower.altText}"
+        />
+      </div>`
+    )
+  );
+});
+
+// When the pastel button is pressed, generate flowers that are pastel
+DOMSelectors.pastel.addEventListener("click", function () {
+  DOMSelectors.container.innerHTML = "";
+
+  const pastel = flowers.filter((flower) => flower.soft_pastel === "Y");
+
+  pastel.forEach((flower) =>
+    DOMSelectors.container.insertAdjacentHTML(
+      "beforeend",
+      `<div class="card">
+        <h2 class="card-title">${flower.title}</h2>
+        <h3 class="card-desc">${flower.description}</h3>
+        <h4 class="card-price">$${flower.price}</h4>
+        <img
+          class="card-img"
+          src="${flower.imageUrl}"
+          alt="${flower.altText}"
+        />
+      </div>`
+    )
+  );
 });
 
 //movies.filter((movie) => movie.actors.includes("Actor name"));

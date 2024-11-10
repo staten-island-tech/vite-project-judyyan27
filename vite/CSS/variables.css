@@ -1,25 +1,46 @@
 :root{
-    --title: #DAA520;
-
-
-    --border-l: #FFCB77;
-    --card-l: #fff6e2;
-    --text-l:#995f38;
-    --button-l: #a57529;
-    --highlight-color: #73937;
+    --title-w: #77381b;
+    --border-w: #ffad77;
+    --card-w: #f7dbc8;
+    --text-w:#883122;
+    --button-bg-w: #f5c0c0;  
+    --button-w: #691f1f;
     
-    --background-light: #FFFBF4;
+    
+    --background-w: #f5d8ca;
 
 
+    --title-c: #2a3e76;
+    --border-c: #b2c8ff;
+    --card-c: #d8e6f7;
+    --text-c: #33496d;
+    --button-bg-c: #ccbee2;
+    --button-c: #4f3775;       
     
-    --border-d: #1D1B1A;
-    --card-d: #F5E4D7;
-    --text-d: #BF7567;
-    --button-d: #668B6A;
-    --highlight-color: #F2A65A;
-    
-    --background-dark: #1D1B1A;
+    --background-c: #e0e7f5;   
   
+/* WARM COLOR THEME */
+    --title: var(--title-w);
+    --card: var(--card-w);
+    --text: var(--text-w);
+    --button: var(--button-w);
+    --button-bg: var(--button-bg-w);
+    --border: var(--border-w);
+
+    --background: var(--background-w); 
+
+/*  COOL COLOR THEME 
+    --title: var(--title-c);
+    --card: var(--card-c);
+    --text: var(--text-c);
+    --button: var(--button-c);
+    --button-bg: var(--button-bg-c);
+    --border: var(--border-c);
+
+    --background: var(--background-c); */
+  
+
+
     --h1: 3.815rem;
     --h2: 3.052rem;
     --h3: 2.441rem;
@@ -28,7 +49,17 @@
     --h6: 1.25rem;
   }
 
-/*   :root{
+/*   
+
+--border-d: #1D1B1A; #F2A65A 
+    --card-d: #F5E4D7;
+    --text-d: #BF7567;
+    --button-d: #668B6A;
+    --highlight-color: #F2A65A;
+    
+    --background-dark: #1D1B1A;
+
+:root{
     --oldlace: #fff6e2;
     --peru: #cc975c;
     --dimgray: #533633;
