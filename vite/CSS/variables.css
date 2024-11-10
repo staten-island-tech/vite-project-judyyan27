@@ -1,4 +1,33 @@
 :root{
+    --title: #DAA520;
+
+
+    --border-l: #FFCB77;
+    --card-l: #fff6e2;
+    --text-l:#995f38;
+    --button-l: #a57529;
+    --highlight-color: #73937;
+    
+    --background-light: #FFFBF4;
+
+
+    
+    --border-d: #1D1B1A;
+    --card-d: #F5E4D7;
+    --text-d: #BF7567;
+    --button-d: #668B6A;
+    --highlight-color: #F2A65A;
+    
+    --background-dark: #1D1B1A;
+  
+    --h1: 3.815rem;
+    --h2: 3.052rem;
+    --h3: 2.441rem;
+    --h4: 1.953rem;
+    --h5: 1.563rem;
+  }
+
+/*   :root{
     --oldlace: #fff6e2;
     --peru: #cc975c;
     --dimgray: #533633;
@@ -15,4 +44,4 @@
     --h3: 5.052rem;
     --h4: 3.79rem;
     --h5: 2.843rem;
-  }
+  } */

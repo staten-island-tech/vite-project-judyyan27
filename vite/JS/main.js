@@ -12,8 +12,8 @@ function createCards(flowers) {
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
       `<div class="card">
-        <h3 class="card-title">${flower.title}</h3>
-        <h4 class="card-desc">${flower.description}</h4>
+        <h4 class="card-title">${flower.title}</h4>
+        <h5 class="card-desc">${flower.description}</h5>
         <h5 class="card-price">$${flower.price}</h5>
         <img
           class="card-img"
@@ -26,6 +26,8 @@ function createCards(flowers) {
 }
 
 createCards(flowers);
+
+//movies.filter((movie) => movie.actors.includes("Actor name"));
 
 /* 
 function sortby(){

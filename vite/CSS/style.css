@@ -7,7 +7,7 @@ html, body, * {
   font-size: 10px;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p, button {
   font-family: "Mochiy Pop One", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, p {
  */
 
 body{
-  background-color: var(--primary);
+  background-color: var(--background-light);
 }
 
 h1 {
@@ -44,40 +44,72 @@ h5 {
   font-size: var(--h5);
 }
 
+form{
+  text-align: center;
+  margin: 0.3rem;
+}
+
+button{
+  font-size: var(--h5);
+  border-color: var(--text-l);
+  border-radius: 0.5rem;
+  border-width: 0.3rem;
+
+  color: var(--button-l);
+  background-color: var(--background-light);
+  border-radius: 0.5rem;
+}
+
+
+
+button:hover{
+  scale: 95%;
+  filter: drop-shadow(0 0 1rem var(--text-l));
+}
+
 .container-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-around; 
+  justify-content:space-between; 
   align-items: center;
   flex-direction: row;
 }
 
 .title{
-  color: var(--pink);
+  color: var(--title);
 }
+
+
 .card {
-  width: 60rem;
-  height: 80rem;
+  width: 30rem;
+  height: 36rem;
   border-radius: 1.5rem;
-  border-width: 2rem;
+  border-width: 1.5rem;
   margin:1rem;
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
-  border: 1.5rem groove var(--dimgray);
-  background-color: var(--oldlace);
+  border: 1.5rem groove var(--border-l);
+  background-color: var(--card-l);
+}
+
+
+.card:hover {
+  scale: 107%;
+  filter: drop-shadow(0 0 2rem var(--border-l));
 }
 
 .card-img {
-  height: 37rem;
-  width: 45rem;
-  object-fit: contain;
+  height: 17rem;
+  width: 18rem;
+  object-fit: cover;
+  margin: 0.3rem;
 }
 
-.card-title, .card-desc, .card-price {
-  margin: 1rem;
-  color: var(--dimgray);
+.card-title, .card-desc, .card-price{
+  color: var(--text-l);
+  margin: 0.2rem;
+  /* translate: 0 0.5rem; */
 }
