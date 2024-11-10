@@ -2,12 +2,18 @@ import "../CSS/style.css";
 import { flowers } from "./flowers.js";
 
 const DOMSelectors = {
-  form: document.querySelector(`form`),
-  button: document.querySelector(`.submit`),
+  button: document.querySelector(`.button`),
+  theme: document.querySelector(`#theme`),
+  spring_summer: document.querySelector(`#spring_summer`),
+  fall_winter: document.querySelector(`#fall_winter`),
+  vibrant: document.querySelector(`#vibrant`),
+  pastel: document.querySelector(`#pastel`),
+  sale: document.querySelector(`#sale`),
+  reset: document.querySelector(`#reset`),
   container: document.querySelector(`.container-box`),
 };
 
-function createCards(flowers) {
+function createCards() {
   flowers.forEach((flower) =>
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
@@ -24,8 +30,16 @@ function createCards(flowers) {
     )
   );
 }
+createCards();
 
-createCards(flowers);
+reset.addEventlistener("click", function () {
+  DOMSelectors.container.innerHTML = "";
+  //erases the cards inside container
+
+  createCards();
+
+  //load new cards
+});
 
 //movies.filter((movie) => movie.actors.includes("Actor name"));
 
