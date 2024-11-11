@@ -58,7 +58,7 @@ const flowers = [
     spring_summer: "Y",
     fall_winter: "N",
 
-    warm_vibrant: "Y",
+    warm_vibrant: "N",
     soft_pastel: "Y",
 
     sale: "Y",
@@ -185,7 +185,7 @@ const flowers = [
     spring_summer: "Y",
     fall_winter: "Y",
 
-    warm_vibrant: "Y",
+    warm_vibrant: "N",
     soft_pastel: "Y",
 
     sale: "N",

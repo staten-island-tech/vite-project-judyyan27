@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -12,27 +12,32 @@
     />
     <title>Vite App Flower Shop</title>
   </head>
-  <body>
-    <div class="title">
-      <h1 class="title">Flowers For Sale (❁´◡`❁) 𖡼.𖤣𖥧𖡼.𖤣𖥧</h1>
-    </div>
-    <div class="selection">
-      <button class="btn" id="theme">Change Theme (Warm or Cool)</button>
+  <body class="warm">
+    <!--class="warm" class="cool" -->
+    <header>
+      <div class="title">
+        <h1 class="title">Flowers For Sale (❁´◡`❁) 𖡼.𖤣𖥧𖡼.𖤣𖥧</h1>
+      </div>
+    </header>
 
-      <button class="btn" id="spring_summer">
-        Spring/Summer Season Flowers
-      </button>
-      <button class="btn" id="fall_winter">Fall/Winter Flowers</button>
+    <main>
+      <div class="selection">
+        <button class="btn" id="theme">Change Theme (Warm or Cool)</button>
 
-      <button class="btn" id="vibrant">Warm & Vibrant Colors</button>
-      <button class="btn" id="pastel">Soft & Pastel Colors</button>
+        <button class="btn" id="spring_summer">
+          Spring/Summer Season Flowers
+        </button>
+        <button class="btn" id="fall_winter">Fall/Winter Flowers</button>
 
-      <button class="btn" id="sale">Sale Deal</button>
+        <button class="btn" id="vibrant">Warm & Vibrant Colors</button>
+        <button class="btn" id="pastel">Soft & Pastel Colors</button>
 
-      <button class="btn" id="reset">Reset</button>
-    </div>
-    <div class="container-box">
-      <!--<div class="card">
+        <button class="btn" id="sale">Sale Deal</button>
+
+        <button class="btn" id="reset">Reset</button>
+      </div>
+      <div class="container-box">
+        <!--<div class="card">
         <h4 class="card-title">${flower.title}</h4>
         <h5 class="card-desc">${flower.description}</h5>
         <h5 class="card-price">$${flower.price}</h5>
@@ -42,7 +47,8 @@
           alt="${flower.altText}"
         />
       </div> -->
-    </div>
+      </div>
+    </main>
     <script type="module" src="JS/main.js"></script>
   </body>
 </html>
