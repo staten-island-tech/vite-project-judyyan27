@@ -4,7 +4,6 @@ import { flowers } from "./products.js";
 const DOMSelectors = {
   button: document.querySelector(`.button`),
   container: document.querySelector(`.container-box`),
-
   theme: document.querySelector(`#theme`),
   spring_s: document.querySelector(`#spring_summer`),
   fall_w: document.querySelector(`#fall_winter`),
@@ -56,8 +55,9 @@ DOMSelectors.reset.addEventListener("click", function () {
 // When the spring_summer button is pressed, generate flowers that bloom in those seasons
 DOMSelectors.spring_s.addEventListener("click", function () {
   DOMSelectors.container.innerHTML = "";
-
-  const springSummer = flowers.filter((flower) => flower.spring_summer === "Y");
+  const springSummer = flowers.filter((flower) =>
+    flower.typeof.includes("spring_summer")
+  );
   createCards(springSummer);
 
   document.body.classList.add("warm");
@@ -67,8 +67,9 @@ DOMSelectors.spring_s.addEventListener("click", function () {
 // When the fall_winter button is pressed, generate flowers that bloom in those seasons
 DOMSelectors.fall_w.addEventListener("click", function () {
   DOMSelectors.container.innerHTML = "";
-
-  const fallWinter = flowers.filter((flower) => flower.fall_winter === "Y");
+  const fallWinter = flowers.filter((flower) =>
+    flower.typeof.includes("fall_winter")
+  );
   createCards(fallWinter);
 
   document.body.classList.add("cool");
@@ -78,39 +79,38 @@ DOMSelectors.fall_w.addEventListener("click", function () {
 // When the vibrant button is pressed, generate flowers that are vibrant
 DOMSelectors.vibrant.addEventListener("click", function () {
   DOMSelectors.container.innerHTML = "";
-
-  const vibrant = flowers.filter((flower) => flower.warm_vibrant === "Y");
+  const vibrant = flowers.filter((flower) =>
+    flower.typeof.includes("warm_vibrant")
+  );
   createCards(vibrant);
 });
 
 // When the pastel button is pressed, generate flowers that are pastel
 DOMSelectors.pastel.addEventListener("click", function () {
   DOMSelectors.container.innerHTML = "";
-
-  const pastel = flowers.filter((flower) => flower.soft_pastel === "Y");
+  const pastel = flowers.filter((flower) =>
+    flower.typeof.includes("soft_pastel")
+  );
   createCards(pastel);
 });
 
 /* .Map array method */
-
 DOMSelectors.sale.addEventListener("click", function () {
-  const onSale = flowers.filter((flower) => flower.sale === "Y");
+  const onSale = flowers.filter((flower) => flower.typeof.includes("sale"));
   const sale = 0.6;
-
   const saleFlowers = onSale.map((flower) => ({
     ...flower,
     price: (flower.price * sale).toFixed(2),
+    //fixed --> sets the decimal places to two places
   }));
 
   createCards(saleFlowers);
   // Create cards with discounted flower price
 });
 
-/* 
-function sortby(){
+/* function sortby(){
   //see what button was clicked
   //feed that text into sorting function
-
   createdSorted(x){
     movies.filter((movie) => if movie.genre == "x").forEach(())
   }

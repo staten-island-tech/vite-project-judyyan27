@@ -6,14 +6,7 @@ const flowers = [
     price: 9.99,
     imageUrl: "/rose.jpg",
     altText: "close-up image of a red rose and green stem with a few leaves",
-
-    spring_summer: "Y",
-    fall_winter: "N",
-
-    warm_vibrant: "Y",
-    soft_pastel: "N",
-
-    sale: "N",
+    typeof: ["spring_summer", "warm_vibrant"],
   },
   {
     title: "Tulip",
@@ -22,14 +15,7 @@ const flowers = [
     price: 7.49,
     imageUrl: "/tulip.jpg",
     altText: "close-up image of a orange and yellow tulip",
-
-    spring_summer: "Y",
-    fall_winter: "N",
-
-    warm_vibrant: "Y",
-    soft_pastel: "N",
-
-    sale: "N",
+    typeof: ["spring_summer", "warm_vibrant"],
   },
   {
     title: "Sunflower",
@@ -38,14 +24,7 @@ const flowers = [
     price: 8.25,
     imageUrl: "/sunflower.jpg",
     altText: "close-up image of a yellow sunflower",
-
-    spring_summer: "N",
-    fall_winter: "Y",
-
-    warm_vibrant: "Y",
-    soft_pastel: "N",
-
-    sale: "N",
+    typeof: ["fall_winter", "warm_vibrant"],
   },
   {
     title: "Lily",
@@ -54,14 +33,7 @@ const flowers = [
     price: 12.75,
     imageUrl: "/lily.jpg",
     altText: "close-up image of a white lily",
-
-    spring_summer: "Y",
-    fall_winter: "N",
-
-    warm_vibrant: "N",
-    soft_pastel: "Y",
-
-    sale: "Y",
+    typeof: ["spring_summer", "soft_pastel", "sale"],
   },
   {
     title: "Daisy",
@@ -70,14 +42,7 @@ const flowers = [
     price: 5.99,
     imageUrl: "/daisy.jpg",
     altText: "close-up image of an oxeye (white) daisy",
-
-    spring_summer: "Y",
-    fall_winter: "N",
-
-    warm_vibrant: "Y",
-    soft_pastel: "N",
-
-    sale: "N",
+    typeof: ["spring_summer", "warm_vibrant"],
   },
   {
     title: "Orchid",
@@ -86,14 +51,7 @@ const flowers = [
     price: 14.49,
     imageUrl: "/orchid.png",
     altText: "close-up image of a pink orchid",
-
-    spring_summer: "N",
-    fall_winter: "Y",
-
-    warm_vibrant: "N",
-    soft_pastel: "Y",
-
-    sale: "Y",
+    typeof: ["fall_winter", "soft_pastel", "sale"],
   },
   {
     title: "Hydrangea",
@@ -102,14 +60,7 @@ const flowers = [
     price: 11.25,
     imageUrl: "/hydrangea.jpg",
     altText: "close-up image of blue hydrangea",
-
-    spring_summer: "Y",
-    fall_winter: "N",
-
-    warm_vibrant: "N",
-    soft_pastel: "Y",
-
-    sale: "Y",
+    typeof: ["spring_summer", "soft_pastel", "sale"],
   },
   {
     title: "Peony",
@@ -118,14 +69,7 @@ const flowers = [
     price: 13.5,
     imageUrl: "/peony.jpg",
     altText: "close up of a pink and white gradient peony",
-
-    spring_summer: "Y",
-    fall_winter: "N",
-
-    warm_vibrant: "N",
-    soft_pastel: "Y",
-
-    sale: "Y",
+    typeof: ["spring_summer", "soft_pastel", "sale"],
   },
   {
     title: "Lavender",
@@ -134,14 +78,7 @@ const flowers = [
     price: 6.75,
     imageUrl: "/lavender.jpeg",
     altText: "close-up image of a purple lavender",
-
-    spring_summer: "Y",
-    fall_winter: "N",
-
-    warm_vibrant: "N",
-    soft_pastel: "Y",
-
-    sale: "Y",
+    typeof: ["spring_summer", "soft_pastel", "sale"],
   },
   {
     title: "Marigold",
@@ -149,14 +86,7 @@ const flowers = [
     price: 5.25,
     imageUrl: "/marigold.jpeg",
     altText: "close-up image of an orange marigold",
-
-    spring_summer: "N",
-    fall_winter: "Y",
-
-    warm_vibrant: "Y",
-    soft_pastel: "N",
-
-    sale: "N",
+    typeof: ["fall_winter", "warm_vibrant"],
   },
   {
     title: "Dahlia",
@@ -165,14 +95,7 @@ const flowers = [
     price: 10.99,
     imageUrl: "/dahlia.jpeg",
     altText: "close-up image of a pink-orange Dahlia",
-
-    spring_summer: "Y",
-    fall_winter: "N",
-
-    warm_vibrant: "Y",
-    soft_pastel: "N",
-
-    sale: "N",
+    typeof: ["spring_summer", "warm_vibrant"],
   },
   {
     title: "Iris",
@@ -181,14 +104,7 @@ const flowers = [
     price: 8.5,
     imageUrl: "/iris.jpeg",
     altText: "close-up image of a purple iris flower",
-
-    spring_summer: "Y",
-    fall_winter: "Y",
-
-    warm_vibrant: "N",
-    soft_pastel: "Y",
-
-    sale: "N",
+    typeof: ["spring_summer", "fall_winter", "soft_pastel"],
   },
   {
     title: "Gardenia",
@@ -197,14 +113,7 @@ const flowers = [
     price: 12.0,
     imageUrl: "/gardenia.jpeg",
     altText: "close-up image of a white gardenia flower",
-
-    spring_summer: "Y",
-    fall_winter: "N",
-
-    warm_vibrant: "N",
-    soft_pastel: "Y",
-
-    sale: "N",
+    typeof: ["spring_summer", "soft_pastel"],
   },
   {
     title: "Carnation",
@@ -213,14 +122,7 @@ const flowers = [
     price: 6.99,
     imageUrl: "/carnation.png",
     altText: "close-up of magenta, pink, yellow, and white carnation flowers",
-
-    spring_summer: "N",
-    fall_winter: "Y",
-
-    warm_vibrant: "Y",
-    soft_pastel: "N",
-
-    sale: "N",
+    typeof: ["fall_winter", "warm_vibrant"],
   },
   {
     title: "Cherry Blossom",
@@ -229,16 +131,8 @@ const flowers = [
     price: 15.0,
     imageUrl: "/blossom.jpeg",
     altText: "close up image of cherry blossom",
-
-    spring_summer: "Y",
-    fall_winter: "N",
-
-    warm_vibrant: "N",
-    soft_pastel: "Y",
-
-    sale: "Y",
+    typeof: ["spring_summer", "soft_pastel", "sale"],
   },
-
   {
     title: "Chrysanthemum",
     description:
@@ -246,29 +140,13 @@ const flowers = [
     price: 10.5,
     imageUrl: "/chrysanthemum.jpeg",
     altText: "close up image of a yellow and pink chrysanthemum",
-
-    spring_summer: "N",
-    fall_winter: "Y",
-
-    warm_vibrant: "Y",
-    soft_pastel: "N",
-
-    sale: "N",
+    typeof: ["fall_winter", "warm_vibrant"],
   },
 ];
-
 export { flowers };
 
-/* 
-Spring/Summer Flowers: Tulip, Lily, Peony, Rose, Daisy, Lavender, Hydrangea, Dahlia
-
+/* Spring/Summer Flowers: Tulip, Lily, Peony, Rose, Daisy, Lavender, Hydrangea, Dahlia
 Fall/Winter Flowers: Sunflower, Orchid, Carnation, Marigold, Chrysanthemum 
-
-
-
 Warm & Vibrant Colors: Rose, Tulip, Sunflower, Orchid, Marigold, Dahlia
-
 Soft & Pastel Colors: Peony, Cherry Blossom, Gardenia, Lavender, Hydrangea 
-
-Sale Deal: Lily, Orchid, Hydrangea, Peony, Cherry Blossom, Lavender
-*/
+Sale Deal: Lily, Orchid, Hydrangea, Peony, Cherry Blossom, Lavender  */
