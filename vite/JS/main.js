@@ -29,7 +29,7 @@ function createCards(flowers) {
   flowers.forEach((flower) =>
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div class="card">
+      `<div class="flex-wrap">
         <h2 class="card-title">${flower.title}</h2>
         <h3 class="card-desc">${flower.description}</h3>
         <h4 class="card-price">$${flower.price}</h4>

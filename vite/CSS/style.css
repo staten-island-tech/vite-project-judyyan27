@@ -39,6 +39,10 @@ h5 {
   font-size: var(--h5);
 }
 
+.items-center{
+  align-items: center;
+}
+
 .warm {
 /* WARM COLOR THEME */
 --title: var(--title-w);
