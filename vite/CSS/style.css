@@ -62,10 +62,6 @@ h5 {
 }
 
 
-.selection{
-  align-items: center;
-}
-
 button{
   padding: 0.3rem;
 
@@ -77,6 +73,8 @@ button{
   color: var(--button);
   background-color: var(--button-bg);
 }
+
+
 
 button:hover{
   scale: 90%;
